@@ -1,52 +1,49 @@
+@import '/chroma.scss';
+@import '/layout.scss';
+@import '/nord.scss';
+
 :root {
-  --primary-color: #272727;
-  --secondary-color: #808080;
-  --headline-color: var(--secondary-color);
-  --link-color: #0088cc;
-  --link-hover-color: #005580;
-  --link-visited-color: purple;
-  --link-highlight-color: #fa7176;
-  --background-color: #fff;
-  --border-top-color: #e5e5e5;
-  --border-left-color: var(--border-top-color);
-  --footer-color: var(--border-top-color);
-  --article-border-bottom-color: var(--border-top-color);
-  --tag-color: #FFF;
-  --highligt-border-color: #cccccc;
-  --highlight-background-color: #282828;
-  --link-visited-color: purple;
+	--primary-color: var(--nord2);
+	--secondary-color: var(--nord1);
+	--headline-color: var(--secondary-color);
+	--link-color: var(--nord10);
+	--link-hover-color: var(--nord9);
+	--link-visited-color: var(--nord15);
+	--link-highlight-color: var(--nord12);
+	--background-color: var(--nord6);
+	--border-top-color: var(--nord4);
+	--border-left-color: var(--border-top-color);
+	--footer-color: var(--border-top-color);
+	--article-border-bottom-color: var(--border-top-color);
+	--tag-color: var(--nord6);
+	--highligt-border-color: var(--nord5);
+	--highlight-background-color: #282828;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --secondary-color: #bcbcbf;
-    --primary-color: #dadbdd;
-    --headline-color: var(--secondary-color);
-    --link-color: #08c;
-    --link-hover-color: #005580;
-    --link-visited-color: #d03067;
-    --link-highlight-color: #d03067;
-    --background-color: #38444c;
-    --border-top-color: #697278;
-    --border-left-color: var(--border-top-color);
-    --footer-color: var(--border-top-color);
-    --article-border-bottom-color: var(--border-top-color);
-    --tag-color: #FFF;
-    --highligt-border-color: #cccccc;
-    --highlight-background-color: #282828;
+	:root {
+		--primary-color: var(--nord6);
+		--secondary-color: var(--nord5);
+		--headline-color: var(--secondary-color);
+		--link-color: var(--nord9);
+		--link-hover-color: var(--nord10);
+		--link-visited-color: var(--nord15);
+		--link-highlight-color: var(--nord12);
+		--background-color: var(--nord2);
+		--border-top-color: var(--nord1);
+		--border-left-color: var(--border-top-color);
+		--footer-color: var(--border-top-color);
+		--article-border-bottom-color: var(--border-top-color);
+		--tag-color: var(--nord6);
+		--highligt-border-color: var(--nord5);
+		--highlight-background-color: #282828;
+	}
+	img {
+		opacity: .75;
+		transition: opacity .5s ease-in-out;
+	}
 
-    --color-base: #293238;
-    --color-accent: #ec1a62;
-  }
-  img {
-    opacity: .75;
-    transition: opacity .5s ease-in-out;
-  }
-
-  img:hover {
-    opacity: 1;
-  }
+	img:hover {
+		opacity: 1;
+	}
 }
-
-@import '/chroma.scss';
-@import '/layout.scss';
